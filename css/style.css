@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+  background:linear-gradient(105deg,#32CCBC 40%,#3677FF 50%,#2376DD 10%)
+}
+.container{
+  height: 300px;
+  width: 600px;
+  margin-top: 15%;
+  margin-left: 30%;
+  opacity: 1;
+  background-image: url(/images/black.jpeg);
+  background-size: cover;
+  z-index: 0;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+}
+
+.container #img{
+  height: 300px;
+  width: 600px;
+  z-index: 1;
+  opacity: 0.1;
+}
+.container h1{
+  top: 30%;
+  position: absolute;
+  left: 40%;
+}
+
+.container .images{
+  position: absolute;
+  gap: 30px;
+  top: 60%;
+  left:38%;
+  cursor: pointer;
+}
+.container .images #img1{
+height: 40px;
+width:40px;
+margin-right: 10px;
+}
+.container .images #img2{
+height: 50px;
+width:50px;
+margin-left: 10px;
+}
+.container .images #img2:hover{
+  box-shadow: 6px 4px 10px solid #fff;
+}
+.container .images #img3{
+height: 40px;
+width:40px;
+margin-left: 10px;
+}
+.footer{
+  height: 39vh;
+  width: 100%;
+  background-color: rgb(12, 12, 12);
+  margin-top: 7%;
+  color: white;
+}
+.footer .con{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 29vh;
+  width: 100%;
+}
+.footer .con .left{
+  height: 29vh;
+  width: 30%;
+  /* background: green; */
+}
+.footer .con .right{
+  height: 39vh;
+  width: 70%;
+  border-left-style: groove;
+}
+
+.footer ul{
+  margin-left: 20px;
+}
+.footer ul>li{
+  list-style: none;
+  margin-top: 7px;
+}
+.footer ul>li>a{
+  color: white;
+  text-decoration: none;
+  opacity: 0.2;
+}
+.footer ul>li>a:hover{
+  color: white;
+  background-color: red;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+@media(min-width:391px){
+  .footer{
+    display: none;
+  }
+}
+@media(max-width:390px){
+  body{
+    background:rgba(12, 12, 12,0.5);
+  }
+  .container{
+    height: 300px;
+    width: 300px;
+    margin-top: 15%;
+    margin-left: 10%;
+    opacity: 1;
+    background-image: url(/images/black.jpeg);
+    background-size: cover;
+    z-index: 0;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+  }
+  
+  .container #img{
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    opacity: 0.1;
+    border-radius: 10px;
+
+  }
+  .container h1{
+    top: 30%;
+    position: absolute;
+    left: 27%;
+  }
+  
+  .container .images{
+    position: absolute;
+    gap: 30px;
+    top: 60%;
+    left:20%;
+    cursor: pointer;
+  }
+  .container .images #img1{
+  height: 40px;
+  width:40px;
+  margin-right: 10px;
+  }
+  .container .images #img2{
+  height: 50px;
+  width:50px;
+  margin-left: 10px;
+  }
+  
+  .container .images #img3{
+  height: 40px;
+  width:40px;
+  margin-left: 10px;
+  }
+}
